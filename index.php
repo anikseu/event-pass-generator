@@ -124,7 +124,7 @@
 <!-- Text input-->
 
 <div class="form-group">
-  <label class="col-md-4 control-label">Name</label>  
+  <label class="col-md-4 control-label">Unique ID</label>  
   <div class="col-md-4 inputGroupContainer">
   <div class="input-group">
   <span class="input-group-addon">S</span>
