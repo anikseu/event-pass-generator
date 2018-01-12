@@ -7,12 +7,14 @@
     if (isset($_POST['name']) && isset($_POST['time']) && isset($_POST['phone']) && isset($_POST['email'])) {
        
         $name = $_POST['name'];
-	    $email = $_POST['email'];
+	$email = $_POST['email'];
         $phone = $_POST['phone'];
         $rtime = $_POST['time']; 
+	
         
-        // Just a random num generator, improve if needed 
+        // Adding phone number with A Rand Number to generate a unique ID
         $unique = rand(1, 10000000); 
+	$unique += (int)$phone; 
 
  
         $query = "INSERT INTO `user` (name, rtime, email, phone, uniqueID) VALUES ('$name', '$rtime', '$email', '$phone', '$unique')";
